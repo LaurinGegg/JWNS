@@ -9,22 +9,22 @@ class Vertex {
     public Vertex(double x, double y) {
         this.x = x;
         this.y = y;
-        j=999999999;
+        j = 999999999;
     }
 
     public static void main(String[] args) {
         Vertex v1 = new Vertex(42, 17);
         Vertex v2 = new Vertex(0.3, 24.6);
+
         System.out.println(v1);
-        while (v1.x < j) {
+        System.out.println(v1.length());
+        System.out.println(v2.length());
 
-            v1.x = v1.x + v2.x;
-            v1.y = v1.y + v2.y;
-            if (v1.x <= j) {
-                System.out.println(v1);
+    }
 
-            }
-        }
+    public double length() {
+        return Math.sqrt(x * x + y * y);
+
     }
 
     public String toString() {
