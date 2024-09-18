@@ -67,5 +67,8 @@ class Vertex {
         return false;
 
     }
-
+    public void normalize() {
+    double teiler = this.length();
+    x = x / teiler;
+    y = y / teiler;
 }
