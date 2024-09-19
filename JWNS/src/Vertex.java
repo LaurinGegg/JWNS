@@ -1,6 +1,6 @@
 package JWNS.src;
 
-class Vertex {
+public class Vertex {
     public double x;
     public double y;
     public static int i;
@@ -11,8 +11,6 @@ class Vertex {
         this.y = y;
         j = 999999999;
     }
-
-  
 
     public double length() {
         return Math.sqrt(x * x + y * y);
@@ -67,8 +65,10 @@ class Vertex {
         return false;
 
     }
+
     public void normalize() {
-    double teiler = this.length();
-    x = x / teiler;
-    y = y / teiler;
+        double teiler = this.length();
+        x = x / teiler;
+        y = y / teiler;
+    }
 }
