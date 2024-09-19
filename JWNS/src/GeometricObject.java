@@ -23,9 +23,17 @@ public class GeometricObject {
             this.height = height;
 
         }
+    }
 
-        this.width = width;
-        this.height = height;
+    public GeometricObject(double posx, double posy, double width, double height) {
+        this(new Vertex(posx, posy), width, height);
+    }
+
+    public GeometricObject(Vertex pos, double width) {
+        this(pos, width, width);
+    }
+
+    public GeometricObject(double width, double height) {
 
     }
 
