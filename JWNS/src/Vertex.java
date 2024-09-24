@@ -3,6 +3,7 @@ package JWNS.src;
 public class Vertex {
     public double x;
     public double y;
+    public double width;
     public static int i;
     public static int j;
 
