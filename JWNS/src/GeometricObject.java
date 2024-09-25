@@ -34,7 +34,7 @@ public class GeometricObject {
     }
 
     public GeometricObject(double width, double height) {
-        this( 0,  0, height, width);
+        this( 0,  0, width, height);
     }
 
     public GeometricObject() {
@@ -55,7 +55,7 @@ public class GeometricObject {
     }
 
     public boolean contains(Vertex v) {
-        return v.x >= pos.x && v.x <= pos.width && v.y >= pos.y && v.y <= pos.y + height;
+        return v.x >= pos.x && v.x <= pos.x + width && v.y >= pos.y && v.y <= pos.y + height;
     }
 
     public boolean isLagerAs(GeometricObject that) {
@@ -77,7 +77,7 @@ public class GeometricObject {
     public boolean equals(GeometricObject thatObject) {
         if (thatObject instanceof GeometricObject) {
             GeometricObject that = (GeometricObject) thatObject;
-
+            
             return this.height == that.height && this.width == that.width && pos.equals(that.pos);
         }
 
