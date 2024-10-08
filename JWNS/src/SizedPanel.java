@@ -1,5 +1,9 @@
 package JWNS.src;
-import javax.swing;
+//import javax.swing;
+import javax.swing.JPanel;
+
+import JWNS.src.util.ShowInFrame;
+
 import java.awt.Dimension;
 
 public class SizedPanel extends JPanel{
@@ -10,7 +14,18 @@ public SizedPanel(int w, int h){
     preferredWidth = w;
     preferredHeight = h;
 }
+    public SizedPanel() {
+    };
+
+    @Override
+    public Dimension getPreferredSize() {
+        return new Dimension(preferredWidth, preferredHeight);
+    }
+    public static void main(String[] args){
+        ShowInFrame.show("Zweiter Test", new SizedPanel());
+    }
 }
+
  
     
 

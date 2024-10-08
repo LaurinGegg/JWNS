@@ -1,4 +1,4 @@
-package JWNS.src;
+package JWNS.src.util;
 import javax.swing.*;
 
 public class ShowInFrame {
