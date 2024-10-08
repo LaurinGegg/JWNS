@@ -14,7 +14,9 @@ public class PaintablePanel extends SizedPanel {
     }
 
     public static void main(String[] args) {
-        ShowInFrame.show(new PaintablePanel(new PaintableOval(100, 50, 30, 50)));
-        ShowInFrame.show(new PaintablePanel(new PaintableOval(10, 10, 130, 40)));
+        ShowInFrame.show(new PaintablePanel(new PaintableOval(10, 5, 300, 500)));
+        ShowInFrame.show(new PaintablePanel(new PaintableOval(1, 1, 130, 400)));
+        ShowInFrame.show(new PaintablePanel(new PaintableRectangle(100, 500, 300, 500)));
+        ShowInFrame.show(new PaintablePanel(new PaintableRectangle(100, 100, 130, 400)));
     }
 }
