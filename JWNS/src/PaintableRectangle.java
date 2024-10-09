@@ -1,8 +1,7 @@
 package JWNS.src;
-import java.awt.Color;
 public class PaintableRectangle extends SimpleOval implements Paintable {
 
-    public PaintableRectangle(double x, double y, double width, double height, Color color) {
+    public PaintableRectangle(double x, double y, double width, double height) {
         super(x, y, width, height);
 
     }
