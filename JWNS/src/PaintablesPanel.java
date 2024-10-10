@@ -21,7 +21,7 @@ public class PaintablesPanel extends SizedPanel {
         List<Paintable> ps = new ArrayList<Paintable>();
         ps.add(new PaintableOval(100, 50, 30, 50));
         ps.add(new PaintableOval(200, 100, 300, 100));
-        ps.add(new PaintableOval(100, 500, 300, 500));
+        ps.add(new PaintableOval(500, 100, 300, 500));
 
         ShowInFrame.show("Ovale", new PaintablesPanel(ps));
     }
