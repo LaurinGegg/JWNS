@@ -1,7 +1,9 @@
 package JWNS.src;
 
 import java.awt.Image;
-import java.awt.Toolkit;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class MyImage {
     private String name;
@@ -11,12 +13,17 @@ public class MyImage {
         this.name = name;
     }
 
-
-
     public Image get() {
-        if (img == null) {
-            img = Toolkit.getDefaultToolkit().createImage(getClass().getClassLoader().getResource(name));
-        }
+        if (img == null)
+            try {
+                img = ImageIO.read(getClass().getResource("test.png"));
+            } catch (IOException e) {
+
+                e.printStackTrace();
+            }
+        ;
+
         return img;
     }
+
 }

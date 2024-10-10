@@ -29,16 +29,24 @@ public class GeometricObject {
         }
     }
 
+    public GeometricObject(Vertex pos, double width, double height) {
+        this.pos = pos;
+    }
+
     public GeometricObject(double posx, double posy, double width, double height) {
         this(new Vertex(posx, posy), width, height, new Color(0, 0, 0));
     }
 
     public GeometricObject(Vertex pos, double width) {
-        this(pos, width, width, new Color(0,0,0));
+        this(pos, width, width, new Color(0, 0, 0));
     }
 
     public GeometricObject(double width, double height) {
         this(0, 0, width, height);
+    }
+
+    public GeometricObject(Vertex pos) {
+        this(0);
     }
 
     public GeometricObject() {
